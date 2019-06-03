@@ -9337,6 +9337,7 @@ func (r *UsersService) Update(project string, instance string, name string, user
 	c.project = project
 	c.instance = instance
 	c.urlParams_.Set("name", name)
+	c.urlParams_.Set("host", user.Host)
 	c.user = user
 	return c
 }
